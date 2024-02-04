@@ -1,5 +1,5 @@
 import { TextField,Button } from '@mui/material';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { TasksContext } from '../context/TasksContext';
 
 const InputComponent = ({tasksArr,setTasksArr}) => {
@@ -30,6 +30,7 @@ const InputComponent = ({tasksArr,setTasksArr}) => {
     localStorage.setItem('tasks',JSON.stringify(tasks));
     setTasksArr(tasks);
     setTask('');
+    setDoEdit(false);
    }
 
   return (

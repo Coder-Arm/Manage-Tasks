@@ -31,7 +31,7 @@ const TableComponent = ({tasksArr,setTasksArr}) => {
 
   return (
     <div className="flex justify-center mt-12">
-    <table  className="w-[50%] border-collapse border-[2px]">
+    <table className="w-[50%]">
       <thead>
         <tr>
             <th>ID</th>
@@ -43,9 +43,9 @@ const TableComponent = ({tasksArr,setTasksArr}) => {
         {
           tasksArr.map((item,idx) => {
             return <tr key={item.id}>
-              <td align="center">{item.id}</td>
-              <td className='task' align="center">{item.task}</td>
-              <td className="flex gap-4 justify-center">
+              <td className="w-[10%]" align="center">{item.id}</td>
+              <td className='task w-[40%]' align="center">{item.task}</td>
+              <td className="task-actions" align="center">
                 <Button variant="contained" color="warning"
                   onClick={() => handleEdit(idx)}
                 >Edit</Button>

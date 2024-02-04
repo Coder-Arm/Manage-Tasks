@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+table,th,td{
+    border: 2px solid grey;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 5px;
+}
+td button{
+    margin-right: 5px !important;
+}
 .task-completed{
     text-decoration: line-through;
+}
+
+@media (max-width : 800px) {
+    table{
+        width : 80% !important
+    }
+}
+
+@media (max-width : 600px) {
+    table{
+        display: block;
+        width: 95% !important;
+       overflow-x: scroll !important;
+    }
+    table .task{
+        min-width : 300px !important
+    }
+    table .task-actions{
+        min-width : 300px !important
+    }
 }
