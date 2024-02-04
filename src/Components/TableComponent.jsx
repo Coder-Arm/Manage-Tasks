@@ -31,7 +31,7 @@ const TableComponent = ({tasksArr,setTasksArr}) => {
 
   return (
     <div className="flex justify-center mt-12">
-    <table className="w-[50%]">
+    <table className="w-[70%]">
       <thead>
         <tr>
             <th>ID</th>

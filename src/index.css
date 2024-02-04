@@ -19,7 +19,7 @@ td button{
 
 @media (max-width : 800px) {
     table{
-        width : 80% !important
+        width : 100% !important
     }
 }
 
